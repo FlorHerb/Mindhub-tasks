@@ -1,2 +1,2 @@
-# task1
-tarea 1 Mindhub
+# tasks mindhub
+tareas para la creación del maquetado de una página web
