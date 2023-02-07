@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(../assets/fondo.jpeg);
-    background-size:cover;
+    background-size: cover;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -42,19 +42,20 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: linear-gradient(var(--color2), var(--color3),rgba(255, 255, 0, 0));
+    background-image: linear-gradient(var(--color2), var(--color3), rgba(255, 255, 0, 0));
 }
 
 h1 {
     font-size: 4em;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 7%;
     text-align: center;
     color: var(--color9);
     -webkit-text-stroke: 0.01rem var(--color4);
     text-shadow: 5px 1px 3px var(--color1);
 }
-h2{
+
+h2 {
     font-size: 2.7em;
     margin-bottom: 1vw;
     margin-top: 3vw;
@@ -62,39 +63,41 @@ h2{
     text-align: center;
     text-shadow: 2px 0px 3px var(--color1);
 }
-h3:hover{
+
+h3:hover {
     padding-left: 1em;
     background-image: url(../assets/puck.gif);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position:left;
+    background-position: left;
 }
 
-h3{
+h3 {
     font-size: 2.2em;
     color: var(--color1);
     margin-bottom: 0.3em;
     margin-top: 0.6em;
 }
 
-h4{
+h4 {
     padding-top: 1em;
     font-size: 1.5em;
 }
-p{
+
+p {
     font-size: 1.2em;
     padding-bottom: 1%;
     text-align: justify;
 }
 
-h3+p{
+h3+p {
     padding-left: 10vh;
     padding-right: 13vh;
     text-indent: 1.5em;
 
 }
 
-nav{
+nav {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -102,25 +105,26 @@ nav{
     background-color: var(--color3);
 }
 
-nav a{
+nav a {
     padding: 10px;
     color: white;
     text-decoration: none;
     font-size: 1.3em;
 }
-nav a:hover{
+
+nav a:hover {
     border-radius: 10%;
     font-size: 1.5em;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 
-.active{
+.active {
     background-color: var(--color9);
     border-radius: 8%;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     margin-left: 9vw;
@@ -129,7 +133,7 @@ main{
     padding-bottom: 3vh;
 }
 
-figure{
+figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,27 +141,28 @@ figure{
     font-size: 1.5em;
 }
 
-footer{
+footer {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background-color: var(--color9);
 }
 
-footer a{
+footer a {
     color: white;
     padding: 10px;
     font-size: 1.5em;
 }
- footer a:hover{
+
+footer a:hover {
     font-size: 1.7em;
- }
-
-
-ul{
-    list-style:none;
 }
 
-table{
+
+ul {
+    list-style: none;
+}
+
+table {
     width: 70vw;
     height: 30vh;
     border: 1px solid black;
@@ -166,29 +171,85 @@ table{
     color: rgb(0, 0, 0);
     font-size: 1.2em;
     text-align: center;
-    background-color:#a8e7e15e;
+    background-color: #a8e7e15e;
 }
 
-td{
+td {
     padding: 0.5em;
     border: 1px solid black;
 }
 
-th{
+th {
     background-color: var(--color3);
     border: 1px solid black;
     font-size: 1.3em;
-    color: var(--color1); 
+    color: var(--color1);
 }
-.schedule{
+
+.schedule {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-ol li{
+ol li {
     padding-left: 5%;
     padding-right: 6%;
     padding-bottom: 1%;
     text-align: justify;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 0.1em solid var(--color1);
+    padding: 3em 7em;
+}
+
+fieldset {
+    border: none;
+    font-size: 1.2em;
+    display: flex;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid var(--color1);
+    background: none;
+}
+
+input[type=radio] {
+    padding: 1em;
+}
+
+label {
+    padding: 0em 1em;
+}
+
+.schools {
+    width: 60%;
+}
+
+legend {
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.options {
+    flex-direction: column;
+}
+
+input[type=submit]{
+    width: 10em;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    background-color: var(--color6);
+    color: white;
+
 }
